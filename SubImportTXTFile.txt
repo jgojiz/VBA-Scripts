@@ -1,0 +1,13 @@
+Sub OpenAndImportTxtFile()
+    Dim wbI As Workbook, wbO As Workbook
+    Dim wsI As Worksheet
+
+    Set wbI = ThisWorkbook
+    Set wsI = wbI.Sheets("sheet name") 'Sheet where you want to import
+
+    Set wbO = Workbooks.Open("FilePath") 'The txt file is opened as a xlsx file well formatted
+
+    wbO.Sheets(1).Cells.Copy wsI.Cells
+
+    wbO.Close savechanges:=False
+End Sub
