@@ -1,8 +1,5 @@
-Attribute VB_Name = "modSortColumns"
-Option Explicit
-
 Sub SortColumns()
-'Rearrange columns in a range
+'Rearrange columns in a table
     
     'Prevent switching windows and alerts
     Application.ScreenUpdating = False
@@ -12,11 +9,11 @@ Sub SortColumns()
     Dim arrColumns As Variant
     
     'Set thisworkbook sheets
-    Set wksData = shData
-    Set wksCriteria = shCriteria
+    Set wksData = Worksheets("NameOfDataSheet") 'MODIFY THIS
+    Set wksCriteria = Worksheets("Name of sheet where column numbers range is stored") 'MODIFY THIS
     
     'Get column numbers to sort. Col1 original order, Col2 new order
-    arrColumns = wksCriteria.Range("F7:G27").Value
+    arrColumns = wksCriteria.Range("range from criteria sheet").Value 'MODIFY THIS
     
     'Temporary wks to put reorder columns
     Set wksTemp = Worksheets.Add(After:=Worksheets(ThisWorkbook.Worksheets.Count))
