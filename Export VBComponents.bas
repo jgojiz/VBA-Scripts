@@ -1,4 +1,4 @@
-https://stackoverflow.com/questions/31347919/how-to-export-vbaproject-in-excel
+'Taken from https://stackoverflow.com/questions/31347919/how-to-export-vbaproject-in-excel
 
 'Requires Microsoft Visual Basic for Applications Extensibility
 Private Function exportvba(Path As String)
