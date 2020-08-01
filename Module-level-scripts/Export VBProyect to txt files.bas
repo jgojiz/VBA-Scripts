@@ -1,6 +1,6 @@
 ' Excel macro to export all VBA source code in this project to text files for proper source control versioning
 ' Requires enabling the Excel setting in Options/Trust Center/Trust Center Settings/Macro Settings/Trust access to the VBA project object model
-Public Sub ExportVisualBasicCode()
+Private Sub ExportVisualBasicCode()
     Const Module = 1
     Const ClassModule = 2
     Const Form = 3
@@ -54,3 +54,6 @@ Public Sub ExportVisualBasicCode()
     Application.StatusBar = "Successfully exported " & CStr(count) & " VBA files to " & directory
     Application.OnTime Now + TimeSerial(0, 0, 10), "ClearStatusBar"
 End Sub
+
+
+

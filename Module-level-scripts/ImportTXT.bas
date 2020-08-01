@@ -1,13 +1,18 @@
 Sub OpenAndImportTxtFile()
-    Dim importWkb As Workbook, txtFile As Workbook
-    Dim importWks As Worksheet
+'Open a txt to import all of its data
 
-    Set importWkb = ThisWorkbook
-    Set importWks = importWkb.Sheets("sheet name") 'Sheet where you want to import
+    Dim wkbTXTFile As Workbook
+    Dim wksImport As Worksheet
 
-    Set txtFile = Workbooks.Open("FilePath") 'The txt file is opened as a xlsx file well formatted
+    'Set sheet to import data to
+    Set wksImport = importWkb.Sheets("Name of sheet") 'MODIFY THIS
 
-    txtFile.Sheets(1).Cells.Copy importWks.Cells
+    'Open txt file to import data from
+    Set wkbTXTFile = Workbooks.Open("Path of txt file") 'MODIFY THIS
 
-    txtFile.Close savechanges:=False
+    'Copy data
+    wkbTXTFile.Sheets(1).Cells.Copy wksImport.Cells
+
+    'Close txt file
+    wkbTXTFile.Close savechanges:=False
 End Sub
