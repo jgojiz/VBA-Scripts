@@ -1,5 +1,5 @@
 'Requires checking Microsoft Scripting Runtime reference
-Sub SourceDataOnMultipleFiles()
+Sub ScrapeDataOnMultipleFiles()
 'Loop through files in folder and open Excel files (source) to copy its data in this wkb (destination)
 'Your destination sheet should have the appropriate headers
 
