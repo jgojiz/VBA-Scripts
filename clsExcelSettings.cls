@@ -2,7 +2,7 @@
 ' to speed up code execution in VBA.
 ' Adapted from https://excelmacromastery.com/
 
-'GENERAL USAGE:
+' General usage:
 '   Dim settings as New clsExcelSettings
 '   settings.TurnOff
 '   
@@ -10,7 +10,7 @@
 '
 '   settings.TurnOn
 '
-'AND IF YOU HAVE SPECIFIC SETTINGS YOU WANT TO SAVE:
+' If you have specific settings you want to save later:
 '   Dim settings as New clsExcelSettings
 '   settings.Backup
 '   settings.Turnof
@@ -59,3 +59,7 @@ Public Sub TurnOn()
     Application.screenUpdating = True
     Application.displayalerts = True
 End Sub
+
+
+
+
