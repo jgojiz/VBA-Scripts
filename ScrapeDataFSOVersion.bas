@@ -9,7 +9,7 @@ Sub SourceDataOnMultipleFiles()
     Dim fso As New FileSystemObject
     Dim fo As Folder
     
-    'Prevent window switching
+    'Speed up your code
     Application.ScreenUpdating = False
     
     'Destination sheet for all data gathered
@@ -39,18 +39,9 @@ Sub SourceDataOnMultipleFiles()
             wkbSource.Close
         End If
     Next
+    'Restore settings
     Application.ScreenUpdating = True
 End Sub
-
-Sub offsetcopytest()
-    Dim wks As Worksheet
-    Set wks = ActiveSheet
-    
-    wks.Range("A1").CurrentRegion.Offset(1).Copy wks.Range("E1")
-    
-End Sub
-
-
 
 
 
