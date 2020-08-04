@@ -1,4 +1,4 @@
-# VBA-Scritps
+# VBA-Scripts
 This repo is a collection of scripts to automate commom MS Excel tasks. THe folder structure is as follows:
 
 * The _Module-level-scripts_ folder provides such scripts in the form of sub procedures and functions
