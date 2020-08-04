@@ -5,7 +5,7 @@ Sub OpenAndImportTxtFile()
     Dim wksImport As Worksheet
 
     'Set sheet to import data to
-    Set wksImport = importWkb.Sheets("Name of sheet") 'MODIFY THIS
+    Set wksImport = Worksheets("Name of sheet") 'MODIFY THIS
 
     'Open txt file to import data from
     Set wkbTXTFile = Workbooks.Open("Path of txt file") 'MODIFY THIS
