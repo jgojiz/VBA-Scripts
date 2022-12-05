@@ -3,7 +3,7 @@
 ' Adapted from https://excelmacromastery.com/
 
 ' General usage:
-'   Dim settings as New clsExcelSettings
+'   Dim settings as New clsExcelSettings ( class name )
 '   settings.TurnOff
 '   
 '   ------YOUR CODE-----
